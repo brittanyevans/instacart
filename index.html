@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <script
+      src="https://kit.fontawesome.com/1d3a40f414.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://raw.githubusercontent.com/jasondavies/d3-cloud/master/index.js"></script>
+
+    <!-- <script src="https://d3js.org/d3-hierarchy.v2.min.js"></script>
+    <script src="https://d3js.org/d3-shape.v2.min.js"></script>
+    <script src="https://d3js.org/d3-color.v2.min.js"></script>
+    <script src="https://d3js.org/d3-interpolate.v2.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v2.min.js"></script>
+    <script src="https://d3js.org/d3-scale.v3.min.js"></script> -->
+  </head>
+  <body>
+    <div class="box-header">
+      <div class="text-header">
+        <h1>Instacart 2017 Visualization</h1>
+        <p>Brittany Evans</p>
+       </p> <p>Data for this project comes from Open Source at Instacart</p>
+        <img
+          src="icons/logo-carrot.png"
+          alt="carrot image"
+          width="100px"
+          height="100px"
+        />
+      </div>
+    </div>
+    <h1>Orders At A Glance</h1>
+    <svg id="breadcrumbs" style="width: 100%; height: 40px; margin: 5px"></svg>
+    <svg id="sunburst"></svg>
+    <!-- css grid:  -->
+    <h1>Key Metrics</h1>
+    <div class="key-metrics">
+      <div class="metric">
+        <i class="fas fa-shopping-cart fa-2x"></i>
+        <h2>There were <span>20,000</span> orders placed.</h2>
+      </div>
+      <div class="metric">
+        <i class="fas fa-tag fa-2x"></i>
+        <h2>An average order contains <span>10</span> items.</h2>
+      </div>
+      <div class="metric">
+        <i class="fas fa-clock fa-2x"></i>
+        <h2>
+          Users took an average of <span>11</span> days before reordering.
+        </h2>
+      </div>
+      <div class="metric">
+        <i class="fas fa-user-friends fa-2x"></i>
+        <h2>On average, a user placed <span>17</span> orders.</h2>
+      </div>
+    </div>
+    <h1>Most Popular Products</h1>
+    <svg id="popular-products" width="200px" height="200px"></svg>
+    <h1>Ratio of First Placement in Cart</h1>
+    <svg id="first-in-cart"></svg>
+    <h1>Weekly Median Distribution of Orders</h1>
+    <svg id="order-hour-day" width="200px" height="200px"></svg>
+    <h1>Orders Per User</h1>
+    <svg id="user-freq" width="600px" height="600px"></svg>
+    <h1>Ratio of Reordered Products</h1>
+    <svg id="reordered-products" width="600px" height="600px"></svg>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
